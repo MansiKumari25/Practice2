@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hours Converter</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+  <div class="wrapper">
+
+    <div class="main">
+       
+                 <table>
+                    <tr>                       
+                    <td class="lab"><label>Enter Hours: </label></td>
+                    <td class="inp"><input type="text" name="hr" id="hr" required></td>
+                    </tr>
+                    <tr>
+                
+                    <td class="rad"><input type="radio" name="hours" id="min" value="HourstoMin" checked></td>
+                    <td class="inp"><label>Hours To Minutes</label></td>
+                        </tr>
+
+                    <tr>
+                      <td class="rad"><input type="radio" name="hours" id="sec" value="HourstoSec"></td>
+                      <td class="inp"><label>Hours To Seconds</label></td>
+                     </tr>
+
+                    <tr class="btn">
+                        <td colspan="2"><button onclick="calcHours()">Convert</button></td>
+                    </tr>
+               
+                </table>
+
+            <div id="output">
+                <h3>Answer</h3>
+                <div class="op"><p id="typ"></p><span id="ans"></span></div>
+            </div>
+
+    </div>
+
+  </div>
+</body>
+</html>
